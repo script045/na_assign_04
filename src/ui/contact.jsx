@@ -28,48 +28,55 @@ const Contact = () => {
 
     const inputClass = "border-b-2 border-gray-200 p-1"
     return (
-        <div className="container bg-gray-100">
-            <div className="flex gap-12  p-16 shadow-lg ">
-                <div className="flex flex-col gap-6">
-                    <div className="flex flex-col gap-4">
-                        <h1 className="text-3xl">Let’s discuss your Project</h1>
-                        <p>There are many variations of passages of Lorem Ipsu available. but the majority have suffered
-                            alte.</p>
-                    </div>
-                    <div className="flex flex-col gap-8">
-                        {
-                            addresses.map((address, index) => (
-                                <div>
-                                    <AddressCard address={address} key={index}/>
-                                </div>
-                            ))
-                        }
-                    </div>
+        <>
 
-                </div>
-                <div className="flex flex-col gap-6">
-                    <p>There are many variations of passages of Lorem Ipsu available,
-                        but the majority have suffered alte.
-                    </p>
-
-                    <form className="flex flex-col gap-6">
-                        <input type="text" placeholder="Name*" className={inputClass}/>
-                        <input type="text" placeholder="Email*" className={inputClass}/>
-                        <input type="text" placeholder="Location*" className={inputClass}/>
-                        <div className="flex gap-6">
-                            <input type="text" placeholder="Budget*" className={inputClass}/>
-                            <input type="text" placeholder="Subject*" className={inputClass}/>
+            <div className="container bg-gray-100 relative h-178">
+                <div className=" bg-white absolute top-0 rounded-lg z-10  flex gap-12  p-16 shadow-lg  h-192"
+                     style={{width: 'calc(100vw - 400px)'}}>
+                    <div className="flex flex-col gap-6">
+                        <div className="flex flex-col gap-4">
+                            <h1 className="text-3xl">Let’s discuss your Project</h1>
+                            <p>There are many variations of passages of Lorem Ipsu available. but the majority have
+                                suffered
+                                alte.</p>
                         </div>
-                        <input type="text" placeholder="Message*" className={inputClass}/>
-                        <div>
-                            <ImageTextFilledButton title="Submit"/>
+                        <div className="flex flex-col gap-8">
+                            {
+                                addresses.map((address, index) => (
+                                    <div>
+                                        <AddressCard address={address} key={index}/>
+                                    </div>
+                                ))
+                            }
                         </div>
 
-                    </form>
+                    </div>
+                    <div className="flex flex-col gap-6">
+                        <p>There are many variations of passages of Lorem Ipsu available,
+                            but the majority have suffered alte.
+                        </p>
 
+                        <form className="flex flex-col gap-6">
+                            <input type="text" placeholder="Name*" className={inputClass}/>
+                            <input type="text" placeholder="Email*" className={inputClass}/>
+                            <input type="text" placeholder="Location*" className={inputClass}/>
+                            <div className="flex gap-6">
+                                <input type="text" placeholder="Budget*" className={inputClass}/>
+                                <input type="text" placeholder="Subject*" className={inputClass}/>
+                            </div>
+                            <input type="text" placeholder="Message*" className={inputClass}/>
+                            <div>
+                                <ImageTextFilledButton title="Submit"/>
+                            </div>
+
+                        </form>
+
+                    </div>
                 </div>
+
             </div>
-        </div>
+
+        </>
     );
 };
 
