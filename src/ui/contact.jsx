@@ -30,8 +30,8 @@ const Contact = () => {
     return (
         <>
 
-            <div className="container bg-gray-100 relative h-178">
-                <div className=" bg-white absolute top-0 rounded-lg z-10  flex gap-12  p-16 shadow-lg  h-192"
+            <div className="container bg-gray-100 relative h-152">
+                <div className=" bg-white absolute top-0 rounded-lg z-10  flex gap-12  p-16 shadow-lg  h-168"
                      style={{width: 'calc(100vw - 400px)'}}>
                     <div className="flex flex-col gap-6">
                         <div className="flex flex-col gap-4">
@@ -48,6 +48,24 @@ const Contact = () => {
                                     </div>
                                 ))
                             }
+                        </div>
+                        <div className="flex gap-6 pt-12">
+                            <div className=" flex items-center justify-center bg-fuchsia-600 w-8 h-8">
+                                <img src="/contact/facebook.png" alt=""/>
+                            </div>
+                            <div className=" flex items-center justify-center bg-white w-8 h-8">
+                                <img src="/contact/world.png" alt=""/>
+                            </div>
+                            <div className=" flex items-center justify-center bg-white w-8 h-8">
+                                <img src="/contact/be.png" alt=""/>
+                            </div>
+                            <div className=" flex items-center justify-center bg-white w-8 h-8">
+                                <img src="/contact/world.png" alt=""/>
+                            </div>
+                            <div className=" flex items-center justify-center bg-white w-8 h-8">
+                                <img src="/contact/linkedin.png" alt=""/>
+                            </div>
+
                         </div>
 
                     </div>
